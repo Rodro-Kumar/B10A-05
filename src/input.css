@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+  :root {
+    --lexend: "Lexend", system-ui;
+    --primaryColor: #111111;
+    --secondaryColor: #b4f461;
+  }
+  * {
+    @apply m-0 p-0 outline-none box-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  img,
+  a,
+  li,
+  ul,
+  ol,
+  div {
+    @apply m-0 p-0;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  li {
+    @apply list-none;
+  }
+  img {
+    @apply align-middle;
+  }
+}
+
+@layer components {
+  #donation-wraper {
+    row-gap: 40px !important;
+  }
+
+  #history {
+    display: none;
+  }
+
+  #donationhistorybutton {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #navDonationHistory {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #ffffff5d;
+    backdrop-filter: blur(10px);
+  }
+
+  #history-title {
+    row-gap: 20px !important;
+  }
+
+  #history-message {
+    font-size: 30px !important;
+    font-family: var(--lexend) !important;
+    color: var(--primaryColor) !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+
+  .active {
+    background-color: #b4f461 !important;
+    color: #111111 !important;
+    border: 2px solid #b4f461 !important;
+  }
+}

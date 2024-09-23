@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <!-- Daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white h-[100vh]">
+    <div>
+      <!-- Nav -->
+      <div class="py-9 bg-[#f9f7f3]">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <div>
+              <button
+                onclick="window.location.href=`/src/index.html`"
+                id="blog-page-btn"
+                class="font-lexend text-xl font-semibold text-primaryColor bg-secondaryColor py-3 px-8 rounded-lg"
+              >
+                Home
+              </button>
+            </div>
+            <div class="flex items-center gap-x-4">
+              <img src="/assets/logo.png" alt="" />
+              <h5 class="font-semibold text-xl text-primaryColor font-lexend">
+                Donate Bangladesh
+              </h5>
+            </div>
+            <div class="flex items-center gap-x-3">
+              <img src="/assets/coin.png" alt="" />
+              <h5
+                class="font-lexend font-medium text-xl text-primaryColor opacity-[70%]"
+              >
+                5500 BDT
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-12">
+        <div class="flex flex-col gap-y-4">
+          <div class="collapse collapse-arrow bg-secondaryColor">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div
+              class="collapse-title text-xl font-semibold font-lexend text-primaryColor"
+            >
+              What is the Document Object Model (DOM)?
+            </div>
+            <div
+              class="collapse-content font-lexend text-primaryColor font-medium"
+            >
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the page so that programs can
+                change the document structure, style, and content. The DOM
+                represents the document as nodes and objects; that way,
+                programming languages can interact with the page.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-secondaryColor">
+            <input type="radio" name="my-accordion-2" />
+            <div
+              class="collapse-title text-xl font-semibold font-lexend text-primaryColor"
+            >
+              How do you select an element from the DOM?
+            </div>
+            <div
+              class="collapse-content text-primaryColor font-lexend text-base"
+            >
+              <p>
+                Using getElementById, Using getElementsByClassName, Using
+                getElementsByTagName, Using querySelector, Using
+                querySelectorAll, Changing the Text Content, Changing the HTML
+                Content, Changing the Attribute Value.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-secondaryColor">
+            <input type="radio" name="my-accordion-2" />
+            <div
+              class="collapse-title text-xl font-semibold font-lexend text-primaryColor"
+            >
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content text-primaryColor font-medium">
+              <p>
+                The process of using event propagation (bubbling) to handle
+                events at a higher level in the DOM than the element on which
+                the event originated
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-secondaryColor">
+            <input type="radio" name="my-accordion-2" />
+            <div
+              class="collapse-title text-xl font-semibold font-lexend text-primaryColor"
+            >
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content text-primaryColor font-medium">
+              <p>
+                You can use the setAttribute() method. The setAttribute() method
+                accepts two arguments: The name of the attribute to set.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
