@@ -82,4 +82,67 @@
     color: #111111 !important;
     border: 2px solid #b4f461 !important;
   }
+
+  @media only screen and (max-width: 600px) {
+    #nav {
+      padding: 15px 10px !important;
+    }
+    #nav #blog-btn button,
+    #home-btn {
+      padding: 4px 20px !important;
+      font-size: 12px !important;
+    }
+    #nav #DonateBangladesh {
+      font-size: 12px !important;
+    }
+
+    #nav #main-balance {
+      font-size: 12px !important;
+    }
+
+    #nav #bdt {
+      font-size: 12px !important;
+    }
+
+    #nav #DonateBangladeshImg {
+      width: 20px !important;
+    }
+    #nav #DonateBangladeshWraper {
+      column-gap: 2px !important;
+    }
+
+    #nav #mainBalanceWraper {
+      column-gap: 2px !important;
+    }
+
+    #donationhistorybutton #donation-page-btn {
+      padding: 10px 20px !important;
+      font-size: 12px !important;
+    }
+
+    #donationhistorybutton #history-page-btn {
+      padding: 10px 20px !important;
+      font-size: 12px !important;
+    }
+
+    #donationhistorybutton {
+      padding: 30px 0 !important;
+    }
+
+    #main-content {
+      padding: 40px 10px !important;
+    }
+
+    #donation-card {
+      flex-direction: column !important;
+    }
+
+    #donation-amount-div {
+      margin-top: 20px !important;
+    }
+
+    #accordian-wraper {
+      padding: 20px 10px !important;
+    }
+  }
 }
